@@ -5,7 +5,7 @@
 */
 class Controller {
   public function model($model) {
-    $modelFile = "../apps/models/{$model}.php";
+    $modelFile = "../app/models/{$model}.php";
     require_once $modelFile;
 
     return new $model();
